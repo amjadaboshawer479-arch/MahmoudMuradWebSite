@@ -1069,7 +1069,7 @@ html[data-lang="ar"] .btn { font-family: var(--f-arabic-sans); letter-spacing: 0
   width: max-content;
   flex-shrink: 0;
   direction: ltr;
-  animation: marquee 45s linear infinite;
+  animation: marquee 10s linear infinite;
   will-change: transform;
 }
 
