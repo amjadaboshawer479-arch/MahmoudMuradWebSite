@@ -3,7 +3,7 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 
-const WHATSAPP_URL = 'https://wa.me/962796930076';
+const WHATSAPP_URL = 'https://wa.me/962797183598';
 
 const FloatingWhatsApp: React.FC = () => {
   const { pick } = useLanguage();

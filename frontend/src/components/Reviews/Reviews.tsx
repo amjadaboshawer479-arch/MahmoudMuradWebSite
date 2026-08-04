@@ -16,6 +16,7 @@ const Reviews: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState(false);
   const [formOpen, setFormOpen] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(6);
   const [successMessage, setSuccessMessage] = useState('');
 
   const load = async () => {
@@ -88,13 +89,26 @@ const Reviews: React.FC = () => {
         )}
 
         {!loading && !loadError && reviews.length > 0 && (
-          <div className="reviews-grid">
-            {reviews.map((review, i) => (
-              <Reveal as="div" key={review.id} delay={i * 70}>
-                <ReviewCard review={review} />
-              </Reveal>
-            ))}
-          </div>
+          <>
+            <div className="reviews-grid">
+              {reviews.slice(0, visibleCount).map((review, i) => (
+                <Reveal as="div" key={review.id} delay={i * 70}>
+                  <ReviewCard review={review} />
+                </Reveal>
+              ))}
+            </div>
+
+            {visibleCount < reviews.length && (
+              <div className="reviews-load-more">
+                <button
+                  className="btn btn-outline"
+                  onClick={() => setVisibleCount((prev) => prev + 6)}
+                >
+                  <span>{pick('Show more reviews', 'عرض المزيد')}</span>
+                </button>
+              </div>
+            )}
+          </>
         )}
 
         <div className="reviews-cta">

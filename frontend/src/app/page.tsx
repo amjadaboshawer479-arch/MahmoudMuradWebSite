@@ -14,7 +14,7 @@ import Contact from '@/components/Contact/Contact';
 import Signature from '@/components/Signature/Signature';
 import Footer from '@/components/Footer/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
-
+import FloatingBooking from '@/components/FloatingBooking';
 export default function HomePage() {
   return (
     <LanguageProvider>
@@ -31,6 +31,7 @@ export default function HomePage() {
       <Signature />
       <Footer />
       <FloatingWhatsApp />
+      <FloatingBooking />
     </LanguageProvider>
   );
 }
