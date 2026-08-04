@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="M">
+  <defs>
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E4C98E"/>
+      <stop offset="50%" stop-color="#D4B87A"/>
+      <stop offset="100%" stop-color="#B89A5E"/>
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A88E4A"/>
+      <stop offset="100%" stop-color="#8B7333"/>
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B7333"/>
+      <stop offset="100%" stop-color="#4A5237"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <path d="M 100 70 L 165 105 L 165 165 L 100 200 Z" fill="url(#cubeRight)" stroke="#8B7333" stroke-width="0.5"/>
+  <path d="M 100 70 L 35 105 L 35 165 L 100 200 Z" fill="url(#cubeLeft)" stroke="#8B7333" stroke-width="0.5"/>
+  <path d="M 100 35 L 165 70 L 100 105 L 35 70 Z" fill="url(#cubeTop)" stroke="#B89A5E" stroke-width="0.5"/>
+  <path d="M 100 35 L 165 70 L 100 105 L 35 70 Z" fill="none" stroke="#E4C98E" stroke-width="0.8" opacity="0.6"/>
+
+  <g filter="url(#softGlow)">
+    <text x="100" y="88" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="42" font-weight="600" font-style="italic" fill="#FBF6EA">M</text>
+  </g>
+  <text x="132" y="150" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="26" font-weight="500" font-style="italic" fill="#2A3316" opacity="0.4">M</text>
+</svg>

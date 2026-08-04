@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" width="200" height="260" role="img" aria-label="Dr. Mahmoud Murad — Aesthetic Medicine">
+  <defs>
+    <linearGradient id="cubeTopW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F1DFB0"/>
+      <stop offset="45%" stop-color="#E4C98E"/>
+      <stop offset="100%" stop-color="#C7A868"/>
+    </linearGradient>
+    <linearGradient id="cubeLeftW" x1="0%" y1="0%" x2="15%" y2="100%">
+      <stop offset="0%" stop-color="#C7A868"/>
+      <stop offset="55%" stop-color="#A6863F"/>
+      <stop offset="100%" stop-color="#8B7333"/>
+    </linearGradient>
+    <linearGradient id="cubeRightW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B7333"/>
+      <stop offset="55%" stop-color="#5F5828"/>
+      <stop offset="100%" stop-color="#3D4E1F"/>
+    </linearGradient>
+    <radialGradient id="groundShadowW" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="100" cy="186" rx="52" ry="9" fill="url(#groundShadowW)"/>
+
+  <path d="M 100 70 L 165 105 L 165 165 L 100 200 Z" fill="url(#cubeRightW)"/>
+  <path d="M 100 70 L 35 105 L 35 165 L 100 200 Z" fill="url(#cubeLeftW)"/>
+  <path d="M 100 35 L 165 70 L 100 105 L 35 70 Z" fill="url(#cubeTopW)"/>
+
+  <path d="M 100 35 L 165 70 L 100 105 L 35 70 Z" fill="none" stroke="#F8ECCB" stroke-width="0.9" stroke-opacity="0.7"/>
+  <path d="M 100 70 L 100 200" stroke="#2A3316" stroke-width="0.6" stroke-opacity="0.35"/>
+  <path d="M 100 70 L 165 105" stroke="#F8ECCB" stroke-width="0.6" stroke-opacity="0.35"/>
+  <path d="M 100 70 L 35 105" stroke="#F8ECCB" stroke-width="0.6" stroke-opacity="0.35"/>
+  <path d="M 35 105 L 35 165 L 100 200" fill="none" stroke="#2A3316" stroke-width="0.6" stroke-opacity="0.3"/>
+  <path d="M 165 105 L 165 165 L 100 200" fill="none" stroke="#2A3316" stroke-width="0.6" stroke-opacity="0.45"/>
+
+  <path d="M 100 40 L 158 70 L 100 82 L 42 70 Z" fill="#FFFBEF" opacity="0.16"/>
+  <path d="M 100 60 L 108 70 L 100 80 L 92 70 Z" fill="none" stroke="#5F5828" stroke-width="1.1" stroke-opacity="0.55"/>
+
+  <text x="67" y="148" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="46" font-weight="600" font-style="italic" fill="#FBF6EA" opacity="0.96">M</text>
+  <text x="67.6" y="148.6" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="46" font-weight="600" font-style="italic" fill="#2A3316" opacity="0.18">M</text>
+
+  <text x="100" y="232" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="22" font-weight="500" letter-spacing="3.5" fill="#B8955E">DR.MAHMOUD</text>
+  <circle cx="100" cy="248" r="2.4" fill="#8B7333"/>
+</svg>
