@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-const SITE_URL = 'https://drmahmoudmurad.com';
-
+const SITE_URL = 'https://mahmoudabushairah.com';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: 'د. محمود مراد أبو شعيره — الطب التجميلي، عمّان',
