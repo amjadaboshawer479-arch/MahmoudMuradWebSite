@@ -1,7 +1,7 @@
 import Review from '../models/Review.js';
 import { looksLikeSpam, isHoneypotTripped } from '../utils/spamGuard.js';
 import { hashIp } from '../utils/hashIp.js';
-
+import { sendNewReviewEmail } from '../utils/mailer.js';
 // GET /api/reviews — approved reviews only, newest first
 export async function listApprovedReviews(req, res) {
   const reviews = await Review.find({ status: 'approved' })
@@ -68,4 +68,9 @@ export async function submitReview(req, res) {
     message: 'Thank you — your review is now pending approval and will appear once reviewed.',
     id: review._id,
   });
+
+  // Fire-and-forget: notify the clinic owner by email. This runs after the
+  // response is already sent, and sendNewReviewEmail() never throws — so a
+  // slow or failed email can never delay or break the patient's request.
+  sendNewReviewEmail(review);
 }
