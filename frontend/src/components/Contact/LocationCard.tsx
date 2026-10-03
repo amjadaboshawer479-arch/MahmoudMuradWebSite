@@ -4,7 +4,7 @@ import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 
 const MAPS_URL =
-  'https://www.google.com/maps/search/?api=1&query=Amman+Jabal+Al-Nasr+Aden+District+Abu+Rabah+Complex';
+  'https://www.google.com/maps/dir/31.9414485,35.9785496/31.9596729,35.8647804/@31.9584666,35.8367112,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?hl=en&entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D';
 
 const LocationCard: React.FC = () => {
   const { pick } = useLanguage();
@@ -24,8 +24,8 @@ const LocationCard: React.FC = () => {
 
       <p className="location-card-address">
         {pick(
-          'Amman · Jabal Al-Nasr · Aden District · Abu Rabah Complex · 1st Floor',
-          'عمّان · جبل النصر · حي عدن · مجمع أبو رباح · الطابق الأول'
+          'Amman · Jawharat Al-Sweifieh Complex, No. 21, 6th Floor',
+          'عمّان ·مجمع جوهرة الصويفية، رقم ٢١ , الطابق السادس'
         )}
       </p>
 

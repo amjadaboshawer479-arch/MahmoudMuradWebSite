@@ -43,8 +43,8 @@ const items: TimelineData[] = [
     titleEn: 'Private Practice — Amman',
     titleAr: 'عيادة خاصة — عمّان',
     bodyEn:
-      'Now practicing at his private clinic in Amman — Jabal Al-Nasr, offering consultations and treatments in aesthetic medicine.',
-    bodyAr: 'يمارس حالياً في عيادته الخاصة في عمّان — جبل النصر، مُقدماً استشارات وعلاجات في الطب التجميلي.',
+      'Now practicing at his private clinic in Amman — Jawharat Al-Sweifieh, offering consultations and treatments in aesthetic medicine.',
+    bodyAr: 'يمارس حالياً في عيادته الخاصة في عمّان — الصويفيه، مُقدماً استشارات وعلاجات في الطب التجميلي.',
   },
 ];
 

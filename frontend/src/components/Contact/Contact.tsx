@@ -97,8 +97,8 @@ const Contact: React.FC = () => {
           </h2>
           <p className="contact-lede">
             {pick(
-              'A discreet practice in the heart of Jabal Al-Nasr, Amman. Consultations by appointment only.',
-              'عيادة هادئة في قلب جبل النصر، عمّان. الاستشارات بموعد مسبق فقط.'
+              'A discreet practice in the heart of  Amman. Consultations by appointment only.',
+              'عيادة هادئة في قلب العاصمه عمّان. الاستشارات بموعد مسبق فقط.'
             )}
           </p>
         </div>

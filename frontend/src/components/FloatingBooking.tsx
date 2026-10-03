@@ -16,6 +16,7 @@ const FloatingBooking: React.FC = () => {
       className="floating-booking"
       aria-label={pick('Book Online', 'احجز أونلاين')}
     >
+      <span className="floating-booking-pulse"></span>
       <svg
         viewBox="0 0 24 24"
         fill="none"
