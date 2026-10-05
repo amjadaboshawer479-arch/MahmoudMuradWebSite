@@ -4,7 +4,7 @@ import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 
 const MAPS_URL =
-  'https://www.google.com/maps/dir/31.9414485,35.9785496/31.9596729,35.8647804/@31.9584666,35.8367112,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?hl=en&entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D';
+  'https://www.google.com/maps/place/31%C2%B057\'34.1%22N+35%C2%B051\'53.9%22E/@31.9594612,35.8624039,17z/data=!3m1!4b1!4m4!3m3!8m2!3d31.9594612!4d35.8649788?hl=en&entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D';
 
 const LocationCard: React.FC = () => {
   const { pick } = useLanguage();
